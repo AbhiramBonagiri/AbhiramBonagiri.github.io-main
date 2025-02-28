@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .lform{
+            display: flex;
+            align-items: center;
+            margin : 100px;
+            /* padding: 9px; */
+            justify-content: space-around;
+        }
+        .box{
+            background-color: #fff;
+            margin: 40px;
+            padding: 80px;
+            box-shadow: 1px 1px 1px 1px grey;
+            border: 2px aliceblue;
+            border-radius: 15px;
+            /* align-items: center;     */
+            text-align: center;
+        }
+        #email{
+            width: 300px;
+            height: 30px;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+        #pass{
+            width: 300px;
+            height: 30px;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+        #ln{
+            width: 300px;
+            height: 30px;
+            border-radius: 5px;
+            color: white;
+            background-color: blue;
+            padding: 10px;
+            padding-bottom: 30px;
+        }
+        #fp{
+            width: 200px;
+            height: 30px;
+            /* border: 2px solid aliceblue; */
+            /* border-radius: 5px; */
+            color: blue;
+            /* background-color: aliceblue; */
+            padding: 10px;
+            padding-bottom: 30px;
+            text-decoration: none;
+        }
+        #cn{
+            width: 180px;
+            height: 30px;
+            border-radius: 5px;
+            color: white;
+            background-color: rgb(30, 181, 30);
+            padding: 10px;
+            padding-bottom: 30px;
+        }
+        #fb{
+            color: blue;
+            font-family: sans-serif;
+            font-size: 80px;
+        }
+        pre{
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+        #ob{
+            text-align: center;
+            /* background-color: black; */
+        }
+    </style>
+</head>
+<body>
+    <div class = "lform">
+    <div><h2 id = "fb">facebook</h2>
+        <pre>Facebook helps you to connect and share             
+with the people in your life</pre>
+    </div>
+    <div id = "ob"> 
+        <div class = "box">
+            <p><input type="email" name="email" id="email" placeholder="Email address or phone number"></p>
+            <p><input type="password" name="pass" id="pass" placeholder="Password"></p>
+            <p><button id = "ln">Log in</button></p>
+            <p><a href="#" id = "fp">Forgot Password?</a></p>
+            <p><button id = "cn">Create new account</button></p>
+            <!-- <div>
+                <footer><strong>Create a page</strong> for a celebrity, brand or business</footer>
+            </div> -->
+        </div>
+        <!-- <footer><strong>Create a page</strong> for a celebrity, brand or business</footer> -->
+        <div id = "footr">
+            <footer><strong>Create a page</strong> for a celebrity, brand or business</footer>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

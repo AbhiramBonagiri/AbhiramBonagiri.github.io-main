@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            position: relative;
+            height: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        #mp {
+            background-color: orange;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+            border-radius: 10px;
+            position: sticky;
+            top: 0; 
+            z-index: 100;
+            /* text-decoration: none; */
+        }
+
+        #mp2 {
+            display: flex;
+            justify-content: right;
+            gap: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .row {
+            background-color: silver;
+            color: blue;
+            padding: 10px;
+            margin: 40px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+            height: 100%;
+        }
+
+        .box {
+            background-color: rgb(27, 249, 253);
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            border: 5px solid black;
+            background: linear-gradient(aqua, rgb(245, 245, 248));
+            box-shadow: 5px 5px 5px 5px grey;
+            transition-property: transform,height,width;
+            transition-duration: 0.2s;
+        }
+        .box:hover{
+            transform:scale(1.5,1.5);
+            /* width: 320px; */
+            /* height: 800px; */
+        }
+        .p-text { 
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 2px;
+        }
+
+        .header {
+            background-image: url(officedesk.jpg); 
+            background-size: cover;
+            background-position: center;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* opacity: 0.7; */
+            display: flex;
+            justify-content: left;
+            align-items: start;
+            /* margin: 500px; */
+        }
+        .header p{
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .header h1 {
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 48px;
+        }
+        .caption{
+            background-color: black;
+            margin: 30px;
+        }
+        #mp h3 {
+            margin: 0;
+        }
+
+        #mp a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        #mp a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            margin-top: 40px;
+            border: 1px solid #ccc;
+        }
+        #services{
+            background-color: orange;
+            margin: 100px;
+            padding: 80px;
+        }
+        #contact{
+            background-color: orange;
+            margin: 100px;
+            padding: 80px;
+        }
+        #about{
+            background-color: orange;
+            margin: 100px;
+            padding: 80px;
+        }
+        #mp1{
+            background-color: orange;
+            margin: 100px;
+            padding: 80px;
+        }
+        ul{
+            margin: 0px;
+            padding:0px;
+        }
+        li{
+            display: inline-block;
+            padding: 5px;
+            font-size: larger;
+        }
+        .submenu{
+            display: none;
+            position: absolute;
+            background-color: white;
+        }
+        .menu:hover .submenu{
+            display: block;
+        }
+        .menu:hover{
+            background-color: silver;
+        }
+        .sm{
+            display: none;
+            position: none;
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            width : 300px;
+            height : 700px;
+            position:fixed;
+            /* display; */
+            /* background-color: orange; */
+        }
+        .services:hover .sm{
+            display : block;
+        }
+        .services:hover{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>TEMP 6</h1>
+    <div id="mp">
+        <h1>My Application</h1>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li class="menu">
+                <a href="#projects">PROJECTS</a>
+                <div class="submenu">
+                    <p><a href="#">PROJECT 1</a></p>
+                    <p><a href="#">PROJECT 2</a></p>
+                </div>
+            </li>
+            <li class = "services">
+                <a href="#services">SERVICES</a>
+                <div class="sm">
+                    <p><a href="#">Web Development</a></p>
+                    <p><a href="#">Mobile App Development</a></p>
+                    <p><a href="#">Backend Development</a></p>
+                </div>
+            </li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <div class="row header" id = "home">
+        <div class="caption">
+            <h1>Full Stack Developer</h1>
+            <p>MERN | MEAN | JAVA | PYTHON</p>
+        </div>
+    </div>
+
+    <div class="row" id = "projects">
+        <div class="box">
+            <h2>Project 1</h2>
+            <p class="p-text">This is my project 1</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="box">
+            <h2>Project 2</h2>
+            <p class="p-text">This is my Project 2</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="box">
+            <h2>Project 3</h2>
+            <p class="p-text">This is my Project 3</p>
+            <a href="#">View Project</a>
+        </div>
+    </div>
+    <div id="services">
+        <p>SERVICES</p>
+    </div>
+    <div id="contact">
+        <p>CONTACT US</p>
+    </div>
+    <div id="about">
+        <p>ABOUT US</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores sunt doloremque ullam, accusantium vel a libero sequi, pariatur, dolores totam reiciendis! Quas, cupiditate laborum. Harum qui rerum iusto officia?
+        </p>
+    </div>
+    <div>
+        <h3 id="mp1">@Copyright 2024. All rights reserved.</h3>
+    </div>
+    </div>
+</body>
+</html>
